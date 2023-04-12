@@ -22,7 +22,11 @@ Constant time complexity: O(2) AKA O(1)
 ### Big O Notations from fast to slow
 
 Constant: O(1)
+
 Logarithmic: O(logN)
+
 Linear: O(N)
+
 Quadratic: O(N^2)
+
 Exponential: O(K^N)
