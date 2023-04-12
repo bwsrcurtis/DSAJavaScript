@@ -30,3 +30,7 @@ Linear: O(N)
 Quadratic: O(N^2)
 
 Exponential: O(K^N)
+
+### Describing complexity in interviews
+
+Drop constants, describe it as the highest complexity involved
