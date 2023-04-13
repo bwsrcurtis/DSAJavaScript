@@ -267,4 +267,22 @@ Calculate every single combination possible and keep track of the minimum
 
 ![pasted-from-clipboard](https://user-images.githubusercontent.com/44857032/231657972-c005cdb3-231f-4a39-b172-6fb90b743564.png)
 
+## Dynamic Programming (dynamicProgrammingMakeChange.js)
+Dynamic approach: Cache values to avoid repeated calculations
+
+### Qualities of Dynamic Programming
+1. Optimal substructure (tends to be recursive)
+2. Overlapping Subproblems
+
+### Dynamic Programming approaches
+Top Down (recursive) Vs. Bottom Up (iterative)
+
+
+
+
+
+
+
+
+
 
