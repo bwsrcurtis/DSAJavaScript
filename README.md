@@ -163,3 +163,22 @@ Recursion is when a function calls itself
     ...a return is hit:
        Pop the current Fn off the stack.
        Resume executing the previous Fn.
+
+### Recursion in four steps
+    var callMyself = function() {
+
+        if() {
+            // base case
+            return;
+        } else {
+            // recursive case
+            callMyself();
+        }
+    
+        return;
+        };
+1. Identify base case(s)
+2. Identify recursive case(s)
+3. Return where appropriate
+4. Write procedures for each case that bring you closer to the base case(s)
+
