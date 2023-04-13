@@ -258,3 +258,6 @@ Repeatedly merge subarrays and sort on each merge
         merge(left, right)
         
 This results in O(N logN) time complexity (bubblesort.js)
+
+## Greedy Algorithms
+Greedy algorithms always make the locally optimal choice (greedyMakeChange.js)
