@@ -182,3 +182,11 @@ Recursion is when a function calls itself
 3. Return where appropriate
 4. Write procedures for each case that bring you closer to the base case(s)
 
+### Recursion Vs. Loop
+
+Recursion can always be implemented as a loop, but in some situations it is simpler to use recursion
+
+### Common Patterns for Recursion
+
+1. Wrapper functions (wrapper.js)
+2. Accumulators (accumulator.js)
