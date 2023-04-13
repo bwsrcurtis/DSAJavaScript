@@ -16,6 +16,7 @@ Two separate loops: O(2N) time complexity
 Constant time complexity: O(2) AKA O(1)
 
 ### Big O Notations from fast to slow
+
 ![big-oh-graph](https://user-images.githubusercontent.com/44857032/231610786-0e6ec79a-ee9d-4ad7-985c-4021c1f78672.jpg)
 
 Constant: O(1)
@@ -42,7 +43,6 @@ arr[0]: Constant
 
 arr.shift(): Linear
 
-
 const obj = {a: 1}
 
 obj.a: Constant
@@ -57,36 +57,39 @@ If every time you loop, you cut your problem by a set amount: O(log N)
 
 A standard linear loop that has another loop performed inside of it cut by a set amount each time: O(Nlog N)
 
-### Complexity	Operation
-O(1)	Running a statement
+### Complexity Operation
 
-O(1)	Value look-up on an array, object, variable
+O(1) Running a statement
 
-O(logn)	Loop that cuts problem in half every iteration
+O(1) Value look-up on an array, object, variable
 
-O(n)	Looping through the values of an array
+O(logn) Loop that cuts problem in half every iteration
 
-O(n^2)	Double nested loops
+O(n) Looping through the values of an array
 
-O(n^3)	Triple nested loops
+O(n^2) Double nested loops
+
+O(n^3) Triple nested loops
 
 ### Calculating Space complexity
+
 Calculated by determining the size and whether you are creating new objects when your code executes
 
 ### What is the time complexity?
+
     var countChars = function(str){
     var count = 0;
 
     for(var i = 0; i < str.length; i++) {
         count++;
     }
-    
+
     return count;
     };
-    
+
     countChars("dance");
     countChars("walk");
-    
+
 Single loop, so the complexity is O(N), where N is the length of str
 
     var countChars = function(str){
@@ -100,10 +103,10 @@ Single loop, so the complexity is O(N), where N is the length of str
     countChars("walk");
 
 
-    // How much more work would it take 
-    // to get the length of 1 million 
+    // How much more work would it take
+    // to get the length of 1 million
     //char string?
-    
+
 Because the length is a property of the string object, the complexity is O(1). Property lookups are instant.
 
       var myList = ["hello", "hola"];
@@ -114,9 +117,10 @@ Because the length is a property of the string object, the complexity is O(1). P
 
       myList.shift();
 
-      //calculate the time complexity for the 
+      //calculate the time complexity for the
       //native methods above (separately)
-      
+
+
 The push method is constant time, O(1), while shift and unshift are linear time, O(N), because you must modify all elements of the array.
 
 ## Optimization with Caching
@@ -133,6 +137,7 @@ Caching the value that a function returns
     }
 
     factorial(35);
-    
+
     factorial(36); // factorial(36) = factorial(35) * 36
 
+See memoization.js for example
