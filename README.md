@@ -78,13 +78,13 @@ Calculated by determining the size and whether you are creating new objects when
 ### What is the time complexity?
 
     var countChars = function(str){
-    var count = 0;
+        var count = 0;
 
-    for(var i = 0; i < str.length; i++) {
-        count++;
-    }
+        for(var i = 0; i < str.length; i++) {
+            count++;
+        }
 
-    return count;
+        return count;
     };
 
     countChars("dance");
@@ -94,7 +94,7 @@ Single loop, so the complexity is O(N), where N is the length of str
 
     var countChars = function(str){
 
-    return str.length;
+        return str.length;
 
     };
 
@@ -133,11 +133,31 @@ Caching the value that a function returns
 
     const factorial = (n) => {
     // Calculations: n * (n-1) * (n-2) * ... (2) * (1)
-    return factorial;
-    }
+        return factorial;
+        }
 
-    factorial(35);
+        factorial(35);
 
-    factorial(36); // factorial(36) = factorial(35) * 36
+        factorial(36); // factorial(36) = factorial(35) * 36
 
 See memoization.js for example
+
+## Recursion
+
+Recursion is when a function calls itself
+
+### Call Stack
+
+    var callMe = function() {
+        callMe();
+        callMe();
+        callMe('anytime');
+    };
+
+1. Push called Fn on stack
+2. Execute Fn body until...
+    ...another fn is called:
+       Pause the current execution and start at step 1.
+    ...a return is hit:
+       Pop the current Fn off the stack.
+       Resume executing the previous Fn.
