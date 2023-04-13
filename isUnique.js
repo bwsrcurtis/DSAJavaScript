@@ -43,7 +43,6 @@ const uniqSort = function (arr) {
 		}
 
 	}
-	arr = uniqArr
-	return arr.sort((a, b) => a - b);
+	return uniqArr.sort((a, b) => a - b);
 };
 uniqSort([2, 3, 5, 4, 4, 4, 2])
