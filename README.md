@@ -261,3 +261,10 @@ This results in O(N logN) time complexity (bubblesort.js)
 
 ## Greedy Algorithms
 Greedy algorithms always make the locally optimal choice (greedyMakeChange.js)
+
+### Brute Force Approach
+Calculate every single combination possible and keep track of the minimum
+
+![pasted-from-clipboard](https://user-images.githubusercontent.com/44857032/231657972-c005cdb3-231f-4a39-b172-6fb90b743564.png)
+
+
