@@ -74,7 +74,7 @@ O(n^3)	Triple nested loops
 Calculated by determining the size and whether you are creating new objects when your code executes
 
 ### What is the time complexity?
-var countChars = function(str){
+    var countChars = function(str){
     var count = 0;
 
     for(var i = 0; i < str.length; i++) {
@@ -89,7 +89,7 @@ var countChars = function(str){
     
 Single loop, so the complexity is O(N), where N is the length of str
 
-var countChars = function(str){
+    var countChars = function(str){
 
     return str.length;
 
@@ -106,7 +106,7 @@ var countChars = function(str){
     
 Because the length is a property of the string object, the complexity is O(1). Property lookups are instant.
 
-var myList = ["hello", "hola"];
+      var myList = ["hello", "hola"];
 
       myList.push("bonjour");
 
@@ -117,4 +117,22 @@ var myList = ["hello", "hola"];
       //calculate the time complexity for the 
       //native methods above (separately)
       
-The push method is constant time, while shift and unshift are linear time because you must modify all elements of the array.
+The push method is constant time, O(1), while shift and unshift are linear time, O(N), because you must modify all elements of the array.
+
+## Optimization with Caching
+
+You can save the value of your loop to optimize time complexity at the cost of space complexity. See isUnique.js
+
+## Memoization
+
+Caching the value that a function returns
+
+    const factorial = (n) => {
+    // Calculations: n * (n-1) * (n-2) * ... (2) * (1)
+    return factorial;
+    }
+
+    factorial(35);
+    
+    factorial(36); // factorial(36) = factorial(35) * 36
+
