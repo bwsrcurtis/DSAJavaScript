@@ -190,3 +190,71 @@ Recursion can always be implemented as a loop, but in some situations it is simp
 
 1. Wrapper functions (wrapper.js)
 2. Accumulators (accumulator.js)
+
+## Divide and Conquer
+
+### Binary Search (Logarithmic Time)
+Search for a value in a sorted array by cutting the side of the search area in half (binarySearch.js)
+
+### Linear Search (Linear Time)
+Search for a value in an array by checking each value in order. (linearSearch.js)
+
+### Divide and Conquer
+Recursive calls to a subset of the problem
+0. Recognize base case
+1. Divide: Break problem down during each call
+2. Conquer: Do work on each subset
+3. Combine: Solutions
+
+### Sorting Types
+#### Naive Sorts: Keep looping and comparing values until the list is sorted
+Bubble Sort, insertion sort, selection sort
+#### Divide and Conquer Sorts: Recursively divide lists and sort smaller parts of list until entire list is sorted
+Mergesort and Quicksort
+
+### Bubble Sort
+Loop through an array, comparing adjacent indices and swapping the greater value to the end
+![pasted-from-clipboard](https://user-images.githubusercontent.com/44857032/231650851-48ea4199-4ee8-459e-83f7-e8c10cf9a1eb.png)
+
+### Merge Sort
+Recursively merge sorted sub-lists
+![Merge_sort_algorithm_diagram](https://user-images.githubusercontent.com/44857032/231650910-7cf493d4-856d-4370-824e-9e80272035e1.svg)
+
+#### Merging Lists
+The merge step takes two sorted lists and merges them into 1 sorted list
+![Screen_Shot_2015-11-17_at_10 25 12_PM](https://user-images.githubusercontent.com/44857032/231651018-35da01a4-5ee0-495b-a3dd-e52fa9f7f21f.png)
+
+## Merge Sort Step One
+Divide input array into 'n' single element subarrays
+![merge_sort_1](https://user-images.githubusercontent.com/44857032/231651254-76279013-42b0-45d9-b45f-961f7c2deb42.png)
+
+## Merge Sort Step Two
+Repeatedly merge subarrays and sort on each merge
+![merge_sort_2](https://user-images.githubusercontent.com/44857032/231651347-cb98603f-a59f-4433-9e1d-222109de7183.png)
+![merge_sort](https://user-images.githubusercontent.com/44857032/231651372-3c29785e-e7d9-4038-ac25-67de466fb609.gif)
+
+## Pseudocode: Merge Sort
+    mergeSort(list)
+        base case: if list.length < 2, return
+        break the list into halves L & R
+        Lsorted = mergeSort(L)
+        Rsorted = mergeSort(R)
+        return merge(Lsorted, Rsorted)
+
+    mergeSort(list)
+        initialize n to the length of the list
+
+        base case is if n < 2, just return
+
+        initialize mid to n/2
+
+        left = left slice of array to mid - 1
+
+        right = right slice of array mid to n - 1
+
+        mergeSort(left)
+        mergeSort(right)
+
+        merge(left, right)
+        
+This results in O(N logN) time complexity (bubblesort.js)
