@@ -20,6 +20,7 @@ const memoizedClosureTimes10 = () => {
 };
 
 const memoClosureTimes10 = memoizedClosureTimes10();
+
 console.log('~~~~~~~~~~~~~~TASK 3~~~~~~~~~~~~~~');
 try {
 	console.log('Task 3 calculated value:', memoClosureTimes10(9));	// calculated
