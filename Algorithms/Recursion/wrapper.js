@@ -6,7 +6,6 @@ function wrapperFnLoop(start, end) {
 			recurse(i + 1);
 		}
 	}
-
 	recurse(start);
 }
 
