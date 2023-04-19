@@ -1,6 +1,3 @@
-// Write a function, makeChange, that returns an integer that represents the least number of coins that add up to an amount where the amount is always divisible by 5.
-
-
 // coin values: 5, 10, 25
 
 const makeChange = (coins, amount) => {

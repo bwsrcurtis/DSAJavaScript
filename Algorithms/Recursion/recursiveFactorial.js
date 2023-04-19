@@ -1,4 +1,3 @@
-// Task 1: Write your own recursive factorial method
 function recursiveFactorial(n) {
 	let factorial = 1
 	function recurse(n) {
@@ -14,8 +13,6 @@ function recursiveFactorial(n) {
 }
 
 console.log(recursiveFactorial(5)) //120
-
-// Task 2: Memoize your factorial method
 
 const memoize = (cb) => {
 	let cache = {};

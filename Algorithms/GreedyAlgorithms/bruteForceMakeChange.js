@@ -1,4 +1,3 @@
-// Write a function, makeChange, that returns an integer that represents the least number of coins that add up to the amount, n.
 let recursionCounter = 0;
 const coins = [10, 6, 1];
 
