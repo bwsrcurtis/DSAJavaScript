@@ -1,6 +1,7 @@
 import DisjointSetItem from "./disjointsetitem";
 
 export default class DisjointSet {
+
 	/**
 	 * @param {function(value: *)} [keyCallback]
 	 */
