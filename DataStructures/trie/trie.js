@@ -83,6 +83,7 @@ export default class Trie {
 	 * @param {string} word
 	 * @return {boolean}
 	 */
+
 	doesWordExist(word) {
 		const lastCharacter = this.getLastCharacterNode(word);
 
@@ -93,6 +94,7 @@ export default class Trie {
 	 * @param {string} word
 	 * @return {TrieNode}
 	 */
+
 	getLastCharacterNode(word) {
 		const characters = Array.from(word);
 		let currentNode = this.head;
