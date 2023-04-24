@@ -13,6 +13,7 @@ function mergeSort(arr) {
 	return merge(sortedLeft, sortedRight);
 }
 
+
 // compare the arrays item by item and return the concatenated result
 function merge(left, right) {
 	let result = []
